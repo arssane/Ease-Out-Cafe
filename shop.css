@@ -1,0 +1,317 @@
+
+*{
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+     
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* all section */
+section{
+     position: relative;
+     width: 100%;
+     min-height: 100vh;
+     padding: 100px;
+     justify-content: space-between;
+     align-items: center;
+}
+
+
+/* Header / nav bar */
+header{
+     position: fixed;
+     z-index: 1;
+     top: 0;
+     left: 0;
+     width: 100%;
+     padding: 4px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     font-size: 2.5ch;
+     background:linear-gradient(to right,burlywood,#7dcdac) ;
+}
+
+header .logo{
+     position: relative;
+     max-width: 80px;
+}
+
+header ul{
+     position: relative;
+     display: flex;
+ }
+
+header ul li{
+     list-style: none;
+ }
+
+header ul li a{
+     display: inline-block;
+     color:rgb(80, 46, 4);
+     font-weight: 400;
+     padding: 20px;
+     text-decoration: none;
+ }
+
+header ul li a:hover{
+    padding: 15px 20px;
+    background-color: #017143;
+    color: #fff;
+    transition: .5s ease;
+ }
+
+
+/* home page */
+ .content{
+     position: relative;
+     width: 100%;
+     display: flex;
+     justify-content:space-between;
+     align-items: center;  
+ }
+
+ .content .intro{
+     position: relative;
+     max-width: 800px;
+ }
+
+ .content .intro h1{
+     color:burlywood;
+     line-height: 1.5em;
+ }
+
+ .content .intro h1 span {
+     color: #017143;
+     font-size: 180%;
+     font-weight: 1000;
+ }
+
+ .content .intro p{
+     color:burlywood;
+     font-size: 160%;
+ }
+
+ .content .intro p span{
+     color: #017143;
+     font-size: 130%;
+     font-weight: 900;
+ }
+ 
+.content .imgbox{
+    width: 600px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 40px;
+    margin-top: 40px;
+}
+
+.content .imgbox{
+    max-width: 300px;
+}
+
+
+/* About Us */
+#us{
+    display: flex;
+}
+
+#us .pc{
+    background: url("green.png");
+    background-size: cover;
+    padding: 50px;
+    border-bottom-left-radius: 70%;
+}
+
+.brief{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.9ch;
+}
+
+.brief h2{
+    color: burlywood;
+}
+.pc p{
+    color: #017143;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:1.9ch ;
+ }
+
+ #us p span{
+    color: burlywood;
+    font-size: 150%;
+    font-weight: 700;
+    
+ }
+
+
+/* Menu  */
+ .menu{
+    font-size: 2.5ch;
+    color: #017143;
+ }
+
+ #men{
+    background: url("ba.jpg");
+    background-size: cover;
+ }
+
+ .menu img{
+    width: 300px;
+    height:auto;
+ }
+
+ .menu h1 {
+    color: burlywood;
+    font-weight: 900;
+    font-size: 3rem;
+    padding-bottom: 50px;
+ }
+
+ .menu h4{
+    color: rgb(61, 4, 4);
+ }
+
+.bc{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bc1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.bc2{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+}
+
+
+/* pictorial */
+ #pic .pict{
+    width: 60%;
+    height: 500px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: url("1.png");
+    background-size: 100% 100%;
+    box-shadow: 1px 2px 10px 10px #017143;
+    animation: slider 12s infinite linear;
+ }
+
+ @keyframes slider{
+    10%{background: url("2.png");
+       background-size: 100% 100%;}
+
+    40%{background: url("3.png");
+        background-size: 100% 100%;}
+
+    70%{background: url("4.png");
+        background-size: 100% 100%;}
+    
+    90%{background: url("ma.png");
+         background-size: 100% 100%;}
+    }
+
+    .pict1 p{
+        font-size: 2.1rem;
+        font-weight:bold;
+        color: burlywood;
+        line-height: 3ch;
+ }
+
+
+/* contact */
+ .con{
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    padding: 100px 0 30px;
+    background:linear-gradient(to right,burlywood,#017143) ;
+    color: black;
+    border-top-left-radius:125px;
+    font-size: 20px;
+    line-height: 20px;
+ }
+
+ .row{
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+ }
+
+ .col{
+    flex-basis: 25%;
+    padding: 30px;
+ }
+
+ .col h3{
+    width: fit-content;
+    margin-bottom: 40px;
+    position: relative;
+ }
+
+ .col ul li a:hover{
+    border-bottom:3px solid #ccc;
+    border-radius: 30%;
+ }
+
+ .email{
+    width: fit-content;
+    border-bottom: solid #ccc;
+    margin: 20px 0;
+ }
+
+ ul li{
+    list-style: none;
+    margin-bottom: 12px;
+ }
+
+ ul li a{
+    text-decoration: none;
+    color: black;
+ }
+
+
+/* javascript */
+ #myBtn{
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px; 
+    z-index: 99; 
+    border: none;
+    outline: none;
+    background-color:burlywood; 
+    color: black; 
+    cursor: pointer; 
+    padding: 10px; 
+    border-radius: 10px;
+    font-size: 18px; 
+}
+
+#myBtn:hover{
+    background-color: aquamarine;
+}
